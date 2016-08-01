@@ -1,0 +1,21 @@
+{
+    "name": "devgroup/yii2-conditions",
+    "description": "Yii2 conditions system",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Salnikov",
+            "email": "ivan@skobeeff.ru"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "DevGroup\\Conditions\\": ""
+        }
+    }
+}
