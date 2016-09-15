@@ -2,6 +2,8 @@ Yii2 conditions system
 ======================
 Yii2 conditions system
 
+> *WARNING*: This extension is under active development. Don't use it in production!
+
 Installation
 ------------
 
@@ -21,11 +23,13 @@ or add
 
 to the require section of your `composer.json` file.
 
-
 Usage
 -----
-
-Once the extension is installed, simply use it in your code by  :
-
 ```php
-<?= \DevGroup\Conditions\AutoloadExample::widget(); ?>```
+'module' => [
+    'conditions' => [
+        'class' => ConditionsModule::class,
+    ],
+],
+```
+`./yii conditions/generate app\\models\\Page`

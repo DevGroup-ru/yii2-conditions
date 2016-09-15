@@ -2,7 +2,10 @@
     "name": "devgroup/yii2-conditions",
     "description": "Yii2 conditions system",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension"],
+    "keywords": [
+        "yii2",
+        "extension"
+    ],
     "license": "MIT",
     "authors": [
         {
@@ -11,11 +14,25 @@
         }
     ],
     "require": {
-        "yiisoft/yii2": "*"
+        "yiisoft/yii2": "dev-master",
+        "yiister/yii2-mappable-ar": "^1.0"
+    },
+    "require-dev": {
     },
     "autoload": {
         "psr-4": {
-            "DevGroup\\Conditions\\": ""
+            "DevGroup\\Conditions\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DevGroup\\Conditions\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "bootstrap": "DevGroup\\Conditions\\Bootstrap",
+        "migrationPath": [
+            "src/migrations"
+        ]
     }
 }
