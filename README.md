@@ -26,7 +26,7 @@ to the require section of your `composer.json` file.
 Usage
 -----
 ```php
-'module' => [
+'modules' => [
     'conditions' => [
         'class' => ConditionsModule::class,
     ],
